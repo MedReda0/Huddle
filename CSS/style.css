@@ -83,7 +83,7 @@ body{
   background-repeat: no-repeat;
   background-position: 0 -75px;
   background-color: var(--Primary-color);
-  height: 100vh;
+  padding-bottom: 50px;
 }
 
 @media (max-width: 991px){
