@@ -83,6 +83,7 @@ body{
   background-repeat: no-repeat;
   background-position: 0 -75px;
   background-color: var(--Primary-color);
+  height: 100vh;
 }
 
 @media (max-width: 991px){
@@ -217,7 +218,7 @@ body{
 }
 
 .landing .content .illustration{
-  width: 500px;
+  width: 550px;
 }
 
 .landing .content .illustration img{
