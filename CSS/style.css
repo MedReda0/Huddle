@@ -618,6 +618,11 @@ body{
   }
 }
 
+.page .content .info input::placeholder{
+  color: transparent;
+}
+
+
 .page .content .info label{
   position: relative;
   top: -55px;
