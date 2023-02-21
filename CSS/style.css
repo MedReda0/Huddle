@@ -632,9 +632,10 @@ body{
   transition: .4s;
 }
 
-.page .content .info input:focus ~ label{
-  top: -95px;
-  left: 0;
+.page .content .info input:not(:placeholder-shown) + label,
+.page .content .info input:focus + label{
+  top: -97px;
+  left: 1px;
   font-weight: bold;
   font-size: 12px;
 }
