@@ -519,7 +519,8 @@ body{
 }
 
 .page{
-  padding: 17px 40px;
+  height: 100vh;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -537,7 +538,7 @@ body{
 
 .page .content .info{
   background-color: white;
-  width: 460px;
+  width: 450px;
   height: 550px;
   padding: 20px 0;
   display: flex;
@@ -547,13 +548,19 @@ body{
 
 @media (max-width: 991px){
   .page .content .info{
-    width: 320px;
+    width: 380px;
+  }
+}
+
+@media (max-width: 768px){
+  .page .content .info{
+    width: 300px;
   }
 }
 
 @media (max-width: 300px){
   .page .content .info{
-    width: 280px;
+    width: 260px;
   }
 }
 
@@ -595,7 +602,13 @@ body{
 
 @media (max-width: 991px){
   .page .content .info input{
-    width: 260px;
+    width: 300px;
+  }
+}
+
+@media (max-width: 768px){
+  .page .content .info input{
+    width: 230px;
   }
 }
 
@@ -629,6 +642,7 @@ body{
   font-size: 13px;
   font-weight: bold;
   margin-top: -18px;
+  margin-bottom: 0;
 }
 
 .page .content .info .submit{
@@ -639,10 +653,9 @@ body{
 .page .content .info .submit::before{
   position: absolute;
   content: "";
-  height: 100%;
-  width: 100%;
-  top: -40%;
-  left: 0;
+  height: 40px;
+  width: 100px;
+  top: -80%;
   border-radius: 6px;
   background-color: var(--Primary-color);
   opacity: 0;
@@ -655,7 +668,7 @@ body{
 
 .page .content .info span:last-of-type{
   font-size: 13px;
-  margin-bottom: 25px;
+  margin: 25px 0;
   position: relative;
 }
 
@@ -680,13 +693,26 @@ body{
 @media (max-width: 991px){
   .page .content .info span:last-of-type::before,
   .page .content .info span:last-of-type::after{
-    width: 110px;
+    width: 130px;
   }
   .page .content .info span:last-of-type::before{
-    left: -120px;
+    left: -140px;
   }
   .page .content .info span:last-of-type::after{
-    right: -120px;
+    right: -140px;
+  }
+}
+
+@media (max-width: 768px){
+  .page .content .info span:last-of-type::before,
+  .page .content .info span:last-of-type::after{
+    width: 95px;
+  }
+  .page .content .info span:last-of-type::before{
+    left: -105px;
+  }
+  .page .content .info span:last-of-type::after{
+    right: -105px;
   }
 }
 
@@ -712,7 +738,7 @@ body{
   background-size: cover;
   background-color: var(--Pink);
   padding: 20px;
-  width: 550px;
+  width: 540px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -721,6 +747,12 @@ body{
 }
 
 @media (max-width: 991px){
+  .page .content .picture{
+    width: 400px;
+  }
+}
+
+@media (max-width: 768px){
   .page .content .picture{
     width: 320px;
   }
