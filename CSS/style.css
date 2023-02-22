@@ -527,6 +527,13 @@ body{
   justify-content: center;
 }
 
+@media (min-height: 600px){
+  .page{
+    height: 100vh;
+    margin: 0;
+  }
+}
+
 .page .content{
   display: flex;
   align-items: center;
@@ -632,11 +639,11 @@ body{
   left: 10px;
   font-weight: 450;
   font-size: 12px;
-  transition: .4s;
+  transition: .4s , font-weight .2s;
 }
 
-.page .content .info input:not(:placeholder-shown) + label,
-.page .content .info input:focus + label{
+.page .content .info input:not(:placeholder-shown) ~ label,
+.page .content .info input:focus ~ label{
   top: -97px;
   left: 1px;
   font-weight: bold;
